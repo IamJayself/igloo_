@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Housing - Find Verified Student Housing with Ease</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1A73E8",
+                        "secondary": "#00BFA6",
+                        "background-light": "#F9FAFB",
+                        "background-dark": "#111821",
+                        "surface-light": "#FFFFFF",
+                        "surface-dark": "#1F2937",
+                        "text-light": "#1F2937",
+                        "text-dark": "#F9FAFB",
+                        "text-muted-light": "#6B7280",
+                        "text-muted-dark": "#9CA3AF"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200/80 dark:border-slate-800/80 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto flex items-center justify-between whitespace-nowrap px-4 py-3">
+<div class="flex items-center gap-4 text-text-light dark:text-text-dark">
+<div class="text-primary size-7">
+<svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5z"></path></svg>
+</div>
+<h2 class="text-lg font-bold tracking-tight">Student Housing</h2>
+</div>
+<nav class="hidden items-center gap-9 md:flex">
+<a class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Browse</a>
+<a class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">For Agents</a>
+<a class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">About</a>
+</nav>
+<div class="flex items-center gap-2">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-slate-200/60 dark:bg-slate-800/60 text-text-light dark:text-text-dark text-sm font-bold leading-normal tracking-wide hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="truncate">Log In</span>
+</button>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-wide hover:bg-primary/90 transition-colors shadow-sm">
+<span class="truncate">Sign Up</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- HeroSection -->
+<section class="container mx-auto px-4 py-16 sm:py-24 lg:py-32">
+<div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
+<div class="flex flex-col gap-6 text-center lg:text-left">
+<div class="flex flex-col gap-3">
+<h1 class="text-4xl font-black tracking-tighter sm:text-5xl md:text-6xl text-text-light dark:text-text-dark">
+                                Find Verified Student Housing with Ease.
+                            </h1>
+<h2 class="text-lg font-normal text-text-muted-light dark:text-text-muted-dark max-w-lg mx-auto lg:mx-0">
+                                Connecting students with trusted landlords for a seamless and secure housing experience.
+                            </h2>
+</div>
+<div class="relative mx-auto lg:mx-0 w-full max-w-md">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-text-muted-light dark:text-text-muted-dark">search</span>
+<input class="form-input h-14 w-full rounded-lg border-slate-300 dark:border-slate-700 bg-surface-light dark:bg-surface-dark pl-12 pr-28 text-base shadow-sm focus:border-primary focus:ring-primary" placeholder="Search by school, city, or location" type="text" value=""/>
+<button class="absolute right-2 top-1/2 -translate-y-1/2 flex h-10 min-w-[84px] items-center justify-center overflow-hidden rounded-md bg-secondary px-5 text-sm font-bold text-white tracking-wide hover:bg-secondary/90 transition-colors">
+<span class="truncate">Search</span>
+</button>
+</div>
+</div>
+<div class="relative w-full aspect-square max-w-lg mx-auto lg:max-w-none lg:aspect-[4/3]">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover rounded-xl shadow-lg" data-alt="Bright, modern student living room with students studying and relaxing" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuADRPUyNjtCoKLp02xFQb9d4Vl9TWHbhLSYvWCa2FG73Y_0asxzXc6oPli2u0BCD1rl6739chfd5H1vzNabM6fV47rBnMeENHVLzH7A1LK1olfCFDBupwrw-qs50DvI-4EbuN4ebO3fQzBFXWGpx2EcB-1qeM5ijCm6O2noGrXGb29kCll5nJE5IrXqHZDVHHX30ofJFWr56j2cNYteRNBjAZCeuWYNepMyL9aG58h0yRSBFIgjhBiHizklHEQZBy5pv9phCS5Q");'></div>
+</div>
+</div>
+</section>
+<!-- Featured Properties -->
+<section class="bg-slate-100/50 dark:bg-slate-900/50 py-16 sm:py-24">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold tracking-tight text-center text-text-light dark:text-text-dark">Featured Properties Near Top Universities</h2>
+<div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+<div class="flex flex-col gap-3 rounded-lg bg-surface-light dark:bg-surface-dark p-3 shadow-md transition-shadow hover:shadow-xl">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md" data-alt="Modern Loft with large windows near a university campus" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAkDdUlxh_SCnI3RanOj8Fm0Rw3vlVkgy7P53PCKeMwAKOsH2TGpE7eoj50cOY2i_PZINuwXhWctuDIo6Iipn6JqnKSjGdRA1E4DYt3ypIY0aohBOrOkUSmsV6F_a4-Kr4nbCGziM8IcqXMYoctPptH-z0mbJWDPOgDs93O4jQDGJtJcEQUehTioRt2dQysx2RNvnKDiw1frFBaxrbUBZguh8R8YqoVH3fB9XV3yqq-FZT4HjqNKacQEvivM-3rMmOwRTLxjSb1");'></div>
+<div>
+<p class="text-base font-medium text-text-light dark:text-text-dark">Modern Loft near Campus</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">$1,200/mo · 2 Beds</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-lg bg-surface-light dark:bg-surface-dark p-3 shadow-md transition-shadow hover:shadow-xl">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md" data-alt="Cozy studio apartment with a single bed and a small kitchen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALSnv3kAsg9bwKHA3KNzrSASk1W2VaDA9_WDDQfu78E1JfvuznbpE8c4a5VOz4h1LLkqJiRNyaZMrL6p5B7z4aC9nsCk1wvpNjt1ZAxOAlN8jR89NzwInL7qZDAo_fMjRLbOUwZ46Y5tvFailEGjfdXaCjfP_3njMvSYlIHT0ryRIxb_-mi1fqKNl4nbe4ukkTzfpleaMpgVgv8OhCJhWXkCRgNUQxbsD3cIbS7KJ-IckHQHGPCC0MSXWPF1bKRxMv1zfYxruJ");'></div>
+<div>
+<p class="text-base font-medium text-text-light dark:text-text-dark">Cozy Studio Apartment</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">$950/mo · 1 Bed</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-lg bg-surface-light dark:bg-surface-dark p-3 shadow-md transition-shadow hover:shadow-xl">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md" data-alt="Shared house with a lush green garden and multiple rooms" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBiOhMpOhVZq3yq2ENCoPjMMSnMv_PjKS9KUjFIEY-4FB4txcq502-fCqLcYuvJQ2Ogv8a_yOeVPJzal3AI4eiLnM7Eii2xhQayt-vDRIohyG7B2dGKO0-rLqhU__3ibv5Ul07_SyTlaJGZ1AwB4ZfAKPQ0ITuYCxclfxBp-EhWnuHKc6NCX9TFC-hAelocBD9bFXslofeKoc-PXxMhWKl0v1-Cs9ZvH9xlFTuzbOELs2iO2Ale14O3CVtAy8BHsXAYPe7PGdia");'></div>
+<div>
+<p class="text-base font-medium text-text-light dark:text-text-dark">Shared House with Garden</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">$800/mo · 4 Beds</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-lg bg-surface-light dark:bg-surface-dark p-3 shadow-md transition-shadow hover:shadow-xl">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md" data-alt="High-rise apartment flat with a view of the downtown skyline" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD_4BpR-XPyre6tv0OwVIAYsIqFWsN92OXqdrOrdByrGZaTDIf9a2QdoNgQL64AvMUOw8HVMzq6n55gxPTBxlOjAMrajr50HhCalkZtZYu4Cue43ZRtDpzI2k_QCKHTPcdmm3VtiU7qGPAMIQW7eHmhEJjH4zxEdKUf-2ycFpLdCrBey8S6G3uefBdNKBsK5bkgui6irA2M0bBYcu9pQYGxfzdXPSnmiOa4aq93ufLAS9O_mpH-zjEH41RNzeDIpLehHL9Lvi5Q");'></div>
+<div>
+<p class="text-base font-medium text-text-light dark:text-text-dark">Downtown High-Rise Flat</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">$1,500/mo · 1 Bed</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dual CTA Section -->
+<section class="container mx-auto px-4 py-16 sm:py-24">
+<div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+<div class="flex flex-col items-center justify-center gap-6 rounded-xl bg-primary/10 dark:bg-primary/20 p-8 text-center">
+<span class="material-symbols-outlined text-primary text-5xl">school</span>
+<h3 class="text-2xl font-bold text-text-light dark:text-text-dark">Students: Browse for free</h3>
+<p class="text-text-muted-light dark:text-text-muted-dark">Find your next home from thousands of verified listings. It's simple, secure, and completely free to search.</p>
+<button class="flex h-12 min-w-[140px] items-center justify-center overflow-hidden rounded-lg border-2 border-primary bg-transparent px-6 text-base font-bold text-primary transition-colors hover:bg-primary hover:text-white">
+<span>Start Searching</span>
+</button>
+</div>
+<div class="flex flex-col items-center justify-center gap-6 rounded-xl bg-secondary/10 dark:bg-secondary/20 p-8 text-center">
+<span class="material-symbols-outlined text-secondary text-5xl">apartment</span>
+<h3 class="text-2xl font-bold text-text-light dark:text-text-dark">Agents: List your property</h3>
+<p class="text-text-muted-light dark:text-text-muted-dark">Connect with thousands of students looking for housing. Our platform makes managing your listings easy and efficient.</p>
+<button class="flex h-12 min-w-[140px] items-center justify-center overflow-hidden rounded-lg bg-secondary px-6 text-base font-bold text-white transition-colors hover:bg-secondary/90">
+<span>Get Started</span>
+</button>
+</div>
+</div>
+</section>
+<!-- FeatureSection (How It Works) -->
+<section class="container mx-auto px-4 py-16 sm:py-24">
+<div class="flex flex-col gap-12">
+<div class="text-center max-w-2xl mx-auto">
+<h2 class="text-3xl font-bold tracking-tight text-text-light dark:text-text-dark">Your New Home in 3 Simple Steps</h2>
+<p class="mt-4 text-lg text-text-muted-light dark:text-text-muted-dark">Finding your perfect student home has never been easier. Follow our straightforward process to secure your spot.</p>
+</div>
+<div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+<div class="flex flex-col gap-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-surface-light dark:bg-surface-dark p-6 text-center shadow-sm">
+<div class="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+<span class="material-symbols-outlined text-primary text-3xl">search</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold text-text-light dark:text-text-dark">1. Search &amp; Filter</h3>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Easily browse thousands of listings with advanced filters to find the perfect match for your needs.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-surface-light dark:bg-surface-dark p-6 text-center shadow-sm">
+<div class="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+<span class="material-symbols-outlined text-primary text-3xl">key</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold text-text-light dark:text-text-dark">2. Book a Verified Space</h3>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Securely book your chosen property online with our verified landlords and transparent process.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-surface-light dark:bg-surface-dark p-6 text-center shadow-sm">
+<div class="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+<span class="material-symbols-outlined text-primary text-3xl">verified</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold text-text-light dark:text-text-dark">3. Move In with Confidence</h3>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Your new home is ready for you. Move in on the agreed date and start your new chapter.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100/50 dark:bg-slate-900/50">
+<div class="container mx-auto px-4 py-12">
+<div class="grid grid-cols-2 gap-8 md:grid-cols-4">
+<div class="col-span-2 md:col-span-1">
+<div class="flex items-center gap-3">
+<div class="text-primary size-7">
+<svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5z"></path></svg>
+</div>
+<h2 class="text-lg font-bold text-text-light dark:text-text-dark">Student Housing</h2>
+</div>
+<p class="mt-4 text-sm text-text-muted-light dark:text-text-muted-dark">Your trusted partner in finding the perfect student accommodation.</p>
+</div>
+<div>
+<h4 class="font-bold text-text-light dark:text-text-dark">For Students</h4>
+<ul class="mt-4 space-y-2 text-sm">
+<li><a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors" href="#">Browse Properties</a></li>
+<li><a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors" href="#">FAQs</a></li>
+<li><a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors" href="#">How it Works</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-text-light dark:text-text-dark">For Agents</h4>
+<ul class="mt-4 space-y-2 text-sm">
+<li><a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors" href="#">List a Property</a></li>
+<li><a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors" href="#">Pricing</a></li>
+<li><a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors" href="#">Agent Hub</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-text-light dark:text-text-dark">Support</h4>
+<ul class="mt-4 space-y-2 text-sm">
+<li><a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors" href="#">Contact Us</a></li>
+<li><a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors" href="#">Help Center</a></li>
+<li><a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors" href="#">Blog</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-8 border-t border-slate-200 dark:border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-text-muted-light dark:text-text-muted-dark">
+<p>© 2024 Student Housing. All rights reserved.</p>
+<div class="flex space-x-4 mt-4 sm:mt-0">
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body>
+</html>
